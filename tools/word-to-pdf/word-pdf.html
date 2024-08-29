@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>PDF to Image Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./word-pdf.css">
+  <script src="./word-pdf.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="../../index.html" class="logo">convertify</a>
+    <nav>
+      <button class="tools-dropdown">
+        <div class="dropdown-head">tools</div>
+        <div class="dropdown-symbol"><img src="../../images/arrow-drop-down-white.svg" alt="" fill="white"></div>
+        <div class="dropdown-menu">
+          <a href="./word-pdf.html">Word to PDF</a>
+          <a href="../img-to-pdf/img-pdf.html">Image to PDF</a>
+          <a href="../pdf-to-img/pdf-img.html">PDF to Image</a>
+          <a href="../merge-pdf/merge-pdf.html">Merge PDF</a>
+        </div>
+      </button>
+      <div>&#124</div>
+      <a href="#">login</a>
+      <div>&#124</div>
+      <a href="#">signup</a>
+    </nav>
+  </header>
+  <main>
+    <section class="tool">
+      <div class="tool-name">Word to PDF Converter</div>
+      <div class="conversion-area">
+        <div class="dropzone-area">
+          <button class="cancel-button">
+            <img src="../../images/delete2.svg" alt="dustbin image for deletion">
+          </button>
+          <div class="tool-dropzone">
+            <span class="tool-dropzone--prompt">Drag file or click to browse</span>
+            <input type="file" name="word" id="tool-dropzone--input"/>
+          </div> 
+        </div>
+        <div>
+          <button id="convert">convertify</button>
+        </div> 
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>
