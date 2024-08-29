@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  padding: 20px 0px;
+  top: 0;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  color: white;
+  gap: 20px;
+  font-size: large;
+  font-weight: 500;
+  align-items: center;
+}
+
+nav > div {
+  font-weight: 600;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: white;
+  padding-bottom: 0;
+  gap: 20px;
+}
+
+header, .hero-section {
+  background-color: #1f2937;
+  padding: 20px 70px;
+}
+
+
+img {
+  height: 100%;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo {
+  font-size: xx-large;
+  font-weight: 900;
+  color: white;
+}
+
+.hero-image {
+  height: 400px;
+  text-align: center;
+}
+
+.hero-text {
+  flex: 0 1 500px;
+  padding-bottom: 20px;
+}
+
+.hero-text > h2 {
+  padding-bottom: 15px;
+  font-size: xx-large;
+}
+
+.explore-section {
+  padding: 30px;
+}
+
+.explore-tools {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.tools {
+  padding-top: 40px;
+  display: flex;
+  flex: 0 1 1;
+  justify-content: center;
+  gap: 30px;
+  flex-flow: row wrap;
+}
+
+.tool-info {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-image {
+  width: 100px;
+  height: 100px;
+}
+
+.tool-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #3882f6;
+}
+
+.tool-text {
+  padding: 20px 0;
+  /* border: 2px solid green; */
+  display: flex;
+  font-size: large;
+  font-weight: 700;
+}
+
+.tool-text > a {
+  color: #1f2937;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+  height: 200px;
+  background-color: #e5e7eb;
+}
+
+.customer-review {
+  color: #1f2937;
+  font-style: italic;
+  font-size: large;
+}
+
+.customer-name {
+  font-size: 18px;
+  font-weight: 700;
+  align-self: flex-end;
+  padding: 0 65px;
+}
+
+.call-to-action {
+  display: flex;
+  background-color: #3882f6;
+  margin: 50px 150px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cta-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cta-button {
+  padding: 6px 30px;
+  border: 1px solid white;
+  color: white;
+  background-color: #3882f6;
+  border-radius: 5px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.tools-dropdown {
+  border: none;
+  background-color: #1f2937;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown-symbol {
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown-symbol img {
+  width: 100%;
+  height: auto;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-wrap: nowrap;
+  align-items: flex-start;
+  padding: 1.5rem;
+  line-height: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  z-index: 100;
+}
+
+.dropdown-menu > a {
+  color: black;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  transform: translateY(10px);
+  z-index: 100;
+  pointer-events: all;
+}
+
+nav > div, nav > a {
+  font-weight: 600;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
