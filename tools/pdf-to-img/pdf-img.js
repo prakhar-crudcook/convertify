@@ -73,6 +73,9 @@ const updateThumbnail = (dropzoneElement, file) => {
     reader.readAsDataURL(file);
     reader.onload = (e) => {
       thumbnail.style.backgroundImage = `url(${reader.result})`;
+      // console.log(reader.result)
+      // console.log(`url(${reader.result})`);
+      // console.log(thumbnail.style.backgroundImage);
     };
   } else {
     if (inputElement.name === "pdf") {
